@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <p><b>1.Baisc form Creation</b></p>
+    <form>
+        <label><b>First Name</b></label>&nbsp;&nbsp;<input type="text" name="fname">
+        <br><br>
+        <label><b>Last Name</b></label>&nbsp;&nbsp;<input type="text" name="lname">
+        <br><br>
+        <label><b>Email ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="mailid">
+        <br><br>
+        <pre>                 <input type="button" name="submit" value="Submit" ></pre>
+    </form><br><br>
+    <p><b>2.Form with Different Input Types</b></p>
+    <form>
+        <p><b>Login form</b></p>
+       <label><b>Full Name</b></label>&nbsp;&nbsp;<input type="text" name="fname">
+        <br><br> 
+        <label><b>Email ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email">
+        <br><br> 
+        <label><b>Password</b></label>&nbsp;&nbsp;&nbsp;<input type="password" name="password">
+        <pre>                 <input type="button" name="submit" value="Submit" ></pre>
+    </form><br><br>
+    <p><b>3.Form with Labels</b></p>
+    <form>
+       <label><b>Username</b></label>&nbsp;&nbsp;<input type="text" name="uname">
+       <br><br> 
+       <label><b>Email ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email">
+       <br><br> 
+       <label><b>Username</b></label>&nbsp;&nbsp;<input type="text" name="uname">
+       <br><br> 
+       <label><b>Short Bio</b></label>&nbsp;&nbsp;&nbsp;<textarea rows="3" cols="20" name="description">A short bio is a short paragraph that serves as a brief professional biography for résumés, company websites, personal branding, and more</textarea>
+    </form><br><br>
+    <p><b>4.Radio Buttons and Checkboxes</b></p>
+    <form>
+        <label><b>Which is your favourite color?</b></label><br><br>
+        <input type="radio" name="color" size="100">Red
+        <input type="radio" name="color">Blue
+        <input type="radio" name="color">Green<br><br><br>
+        <label><b>What are your Hobbies?</b></label><br><br>
+        <input type="checkbox" name="read">Reading<br>
+        <input type="checkbox" name="Travel">Traveling<br>
+        <input type="checkbox" name="cook">Cooking<br>
+    </form>
+    <p><b>5.Dropdown Menus</b></p><br><br>
+    <form>
+        <label><b>Select your country</b></label><br><br>
+        <select name="country">
+            <option value="India">India</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+        </select>
+        <pre>  <input type="button" name="submit" value="Submit" ></pre>
+    </form><br><br>
+    <p><b>6.Text Areas</b></p><br><br>
+    <form>
+        <label><b>Please  Enter feedback about the Hospital</b></label><br><br>
+        <textarea rows="5" cols="40" name="feedback">Very Good hospital and Good service. Overall experience was good but the waiting time must be improved. Overall treatment is good. The services were good and the staff and doctors were excellent in all ways.</textarea>
+    </form><br><br>
+    <p><b>7.Grouping Form Elements</b></p><br><br>
+    <form>
+        <section>
+            <h1>personal details</h1>
+            <label><b>First Name</b></label>&nbsp;&nbsp;<input type="text" name="fname">
+        <br><br>
+        <label><b>Last Name</b></label>&nbsp;&nbsp;<input type="text" name="lname">
+        <br><br>
+        <label><b>Email ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="mailid">
+        </section>
+        <section>
+            <h1>Preferences</h1>
+            <label><b>Which is your favourite color?</b></label><br><br>
+        <input type="radio" name="color" size="100">Red
+        <input type="radio" name="color">Blue
+        <input type="radio" name="color">Green<br><br><br>
+        <label><b>What are your Hobbies?</b></label><br><br>
+        <input type="checkbox" name="read">Reading<br>
+        <input type="checkbox" name="Travel">Traveling<br>
+        <input type="checkbox" name="cook">Cooking<br>
+        </section>
+    </form>
+    <p><b>8.Form with Action and Method</b></p><br><br>
+    <form action="https://www.example.com" method="post" target="_blank" name="myform">
+        <label><b>Full Name</b></label>&nbsp;&nbsp;<input type="text" name="fname">
+        <br><br> 
+        <label><b>Email ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email">
+        <br><br> 
+        <label><b>Password</b></label>&nbsp;&nbsp;&nbsp;<input type="password" name="password">
+        <pre>                 <input type="button" name="submit" value="Submit" ></pre>
+    </form><br><br>
+    <p><b>9.Form with Fieldsets and Legends</b></p><br><br>
+    <form>
+        <fieldset>
+            <legend>Personal details</legend>
+            <label><b>First Name</b></label>&nbsp;&nbsp;<input type="text" name="fname">
+        <br><br>
+        <label><b>Last Name</b></label>&nbsp;&nbsp;&nbsp;<input type="text" name="lname">
+        <br><br>
+        <label><b>Email ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="mailid">
+        <br><br>
+        <label><b>Phone no:</b></label>&nbsp;&nbsp;&nbsp;<input type="tel" name="telephone" placeholder="+91-0000-0000-00">
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label><b>Which is your favourite color?</b></label><br><br>
+        <input type="radio" name="color" size="100">Red
+        <input type="radio" name="color">Blue
+        <input type="radio" name="color">Green<br><br><br>
+        <label><b>What are your Hobbies?</b></label><br><br>
+        <input type="checkbox" name="read">Reading<br>
+        <input type="checkbox" name="Travel">Traveling<br>
+        <input type="checkbox" name="cook">Cooking<br>
+        </fieldset>
+    </form>
+</body>
+</html>
