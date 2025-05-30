@@ -1,0 +1,22 @@
+.sidebar{
+    width: 20%;
+    height: 1000px;
+    background-color: #117ebd;
+    float: left;
+}
+.sidebar-menu{
+    
+    font-size: 40px;
+    display: block;
+    border-width: 20%;
+    border-left: 0px;
+    
+    
+}
+.sidebar-menu #job:hover{
+    background-color: white;
+    text-decoration-color: blue;
+}
+body{
+    background-color: lightgray;
+}

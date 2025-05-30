@@ -1,0 +1,15 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: right;
+}
+#para1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: right;
+}
+body{
+    background-image: url(images/sanket-mishra-AQGJ8dF-MTU-unsplash.jpg);
+    
+}
