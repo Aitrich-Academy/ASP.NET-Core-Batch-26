@@ -1,0 +1,38 @@
+ .main{
+            width: 60%;
+            height: 600px;
+            position: absolute;
+            display: flex;
+        }
+.sidebar
+{
+    position:absolute;
+    width: 30%;
+    height: 700px;
+    top:0px;
+    background-color: #117ebd;
+    border: 2px solid #117ebd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.jobs
+ {
+     position: absolute;
+     width: 128px;
+     height: 21px;
+     left: 330px;
+     top: 192px;
+     font-family: calibri;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 21px;
+ }
+  .profile{
+            width: 500px;
+            height: 500px;
+            border: 2px solid white ;
+            position: relative;
+            margin-top: 40px;
+            margin-left: 300px;
+        }
