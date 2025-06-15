@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1
+        {
+            height:200px ;
+            width: 200px;
+            background-color: blue;
+            color: white;
+            position: relative;
+            animation:backwards 2s infinite;
+            animation-name: anim1;
+        }
+        .div2
+        {
+        height: 300px;
+        width: 300px;
+        background-color: black;
+        color: white;
+        position: relative;
+        animation: forwards 4s infinite;
+        animation-name: anim2;
+
+        }
+        .div3
+        {
+                height: 150px;
+                width: 150px;
+                background-color: green;
+                color: red;
+                position: relative;
+                animation:alternate-reverse 3s ease-in-out;
+                animation-name: anim3;
+
+        }
+        @keyframes anim1
+        {
+            0%{left: 0px; top:0px;}
+            50%{ left:300px;top:0px;}
+            100%{left: 1000px;top:0px;}
+        }
+        @keyframes anim2
+        {
+            0%{left: 0px; top:0px;}
+            50%{ left:300px;top:0px;}
+            100%{ background-color: brown; left: 400px;top:0px;}
+        }
+        @keyframes anim3
+        {
+             0%{left: 0px; top:0px;}
+            50%{background-color: beige;  left:300px;top:0px;}
+            100%{left: 400px;top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Software Developer<br>Cyber Infrastructure
+    </div>
+    <div class="div2">
+        Java Developer<br>Regal Consultancy
+    </div>
+    <div class="div3">
+        Software Test Engineer<br>Hirefox Consultants
+    </div>
+</body>
+</html>
