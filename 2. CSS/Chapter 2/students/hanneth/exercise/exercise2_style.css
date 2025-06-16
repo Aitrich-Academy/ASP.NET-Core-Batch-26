@@ -1,0 +1,91 @@
+li{
+    list-style-type: none;
+}
+.navbar 
+{
+    position: absolute;
+    width: 750px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: #64B7F5;
+}
+.sidebar
+{
+    height: 1000px;
+    width: 20%;
+    background-color: rgba(28, 96, 168, 0.845);
+    color: white;
+}
+.right_top
+{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -1000px;
+    border-radius: 0px 86px 84px 19px;
+ 
+   }
+   .right_bottom
+   {
+    position: absolute;
+     margin-left:20%;
+    margin-top: -900px;
+    width: 80%;
+    background-color: rgb(243, 238, 232);
+   }
+table
+{
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contentarea
+{
+    background-color:azure;
+
+
+}
+
+input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('images/Group.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+.divcontent
+{
+    border: 1px solid rgba(33, 31, 31, 0.93);
+
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+.box
+{
+    background-color: rgb(169, 136, 87);
+    width:150px;
+    height: 30px;
+    border-radius: 20px;
+}
+.applyjob
+{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(39, 68, 184);
+    margin-right: 1px;
+}
+.hrzbar
+{
+    background-color: rgba(28, 96, 168, 0.845);
+    margin-top: 219px;
+    margin-left: -297px;
+    height: 300px;
+    width:auto
+}
