@@ -1,0 +1,256 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e5e5e5;
+    
+}
+.leftside{
+    width: 284px;
+    height: 1049px;
+    left: -14px;
+    top: -13px;
+    background-color: #117EBD;
+    position: absolute;
+
+}
+.profile{
+     margin-top: -10px;
+        height: 100px;
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+}
+.circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    margin-left: 80px;
+    margin-top: 90px;
+    position: absolute;
+}
+.circle img {
+    margin-top: 15px;
+    margin-left: -30px;
+    position: absolute;
+}
+.circle img:hover{
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    margin-left: -60px;
+    margin-top: -32px;
+    position: absolute;
+}
+.olivia{
+    color: white;
+    margin-top: 78px;
+    margin-left: 75px;
+    text-align: center;
+    line-height: 5px;
+    position: absolute;     
+    font-size: smaller;
+}
+.menu{
+    margin-top: 200px;
+    position: absolute;
+    text-align: justify;
+}
+li{
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-left: 10px;
+    line-height: 35px;
+    padding-left: 35px;
+        
+}
+a{
+    color: white;
+    text-decoration: none;
+   
+    
+}
+.addnew{
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 77px;
+}
+.addnew h3{
+    position: absolute;
+    margin-top: -5px;
+    width: 150px;
+    color: white;
+    margin-left: -5px;
+}
+.header{
+    position: absolute;
+   padding: 10px;
+    width: 1228px;
+    height: 80px;
+    margin-left: 262px;
+    margin-top: -10px;
+    background-color: white;
+}
+.header img{
+    float: right;
+
+}
+.bell-icon{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 1050px;
+}
+.findjobseeker h2{
+    position: absolute;
+    margin-top: 120px;
+    margin-left:450px ;
+    color: #117EBD;
+}
+.search{
+    position: absolute;
+    border-radius: 15px;
+    padding: 15px;
+    width: 870px;
+    margin-top: 180px;
+    margin-left: 480px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid lightskyblue;
+}
+.search img{
+    position: absolute;
+    margin-top: -3px;
+}
+.search input{
+    border: none;
+    position: absolute;
+    margin-left: 50px;
+    width: 500px;
+}
+
+.filterimg{
+    position: absolute;
+    margin-left: 750px;
+        
+}
+.selected h3{
+    padding: 10px 0px 1px 0px;
+    border-radius: 15px;
+    border: 1px solid lightskyblue;
+    background-color: #7db4d4;
+    width: 180px;
+    height: 30px;
+    position: absolute;
+    margin-top: 250px;
+    text-align: center;
+    font-weight: 400;
+    color: slategray;    
+}
+.selected h3:hover{
+    padding: 10px 0px 1px 0px;
+    border-radius: 15px;
+    border: 2.5px solid rgb(0, 255, 136);
+    background-color: #00a2ff;  
+    position: absolute;
+    margin-top: 250px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+#location{
+    margin-left: 500px;
+    position: absolute;
+}
+#experience{
+    margin-left: 700px;
+    position: absolute;
+}
+#category{
+    margin-left: 900px;
+    position: absolute;
+}
+#skills{
+    margin-left: 1100px;
+    position: absolute;
+}
+.selected2 h3{
+    padding: 10px 0px 1px 80px;
+    border-radius: 15px;
+    background-color: #117EBD;
+    width: 175px;
+    height: 60px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 500px;
+    font-weight: 400;
+    color: white;
+        
+}
+#Application{
+    position: absolute;
+    margin-left: 270px;
+}
+
+#Total{
+    position: absolute;
+    margin-left: 540px;
+}
+.selected2 img{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 510px;
+    z-index: 1;
+}
+.selected2 h4{
+    position: absolute;
+    margin-top: 365px;
+    margin-left: 690px;
+    z-index: 1;
+    color: white;
+    font-size: 28px;
+}
+.bgimg{
+    position: absolute;
+    width: 1006px;
+    height: 431px;
+    left: 384px;
+    top: 497px;
+    background: url("images/smiling.png");
+}
+.listdiv:hover{
+    background-color: rgb(231, 118, 5);
+    padding: 1px 10px 6px 10px;
+    width: 150px;
+    border-radius: 50px;
+}
+.new:hover{
+    background-color: rgb(231, 118, 5);
+    padding: 10px 0px 20px 10px;
+    width: 87px;
+    border-radius: 50px;
+}
+
+
+.selected2:hover{
+    animation: shake 5s ease-in-out;
+}
+    
+    @keyframes shake{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+
+}
