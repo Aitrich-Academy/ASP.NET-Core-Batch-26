@@ -1,0 +1,123 @@
+.leftbar
+{
+    background-color:#21A7FC ;
+   height: 1000px;
+    width: 20%;
+    color: white;
+
+}
+img
+{
+    height:40px;
+    width: 40px;
+}
+.imgbottom {
+  position: relative;
+  bottom: 18px;
+  right: 8px;
+  font-size: 13px;
+  margin-left: 20px;
+  background-color: #4CB42C;
+  height: 20px;
+  width: 80px;
+}
+body
+{
+font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+}
+.divright_top
+{
+    margin-left: 20%;
+    height: 150px;
+    width: 100%;
+    margin-top: -1000px;
+
+}
+.divright_bottom
+{
+    margin-left: 25%;
+}
+.divstyle
+{
+    border: 1px solid rgb(150, 150, 150);
+    height: 200px;
+    width: 600px;
+    border-radius: 20px;
+    padding-left: 20px;
+    
+}
+.box
+{
+    background-color: grey;
+    height: 25px;px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    animation-name: anim1;
+    position: relative;
+    animation: anim1 2s ease-in infinite;
+}
+.tdwidth
+{
+    width: 600px;
+}
+@keyframes anim1
+{
+    0% {left: 0px; top:0px; }
+    100%{left:10px; top:0px;}
+   
+ }
+ .timeline-container 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  position: relative;
+  padding-left: 10px; /* Space for the line and markers */
+}
+
+.timeline-container::before { /* For the vertical line */
+  content: '';
+  position: absolute;
+  left: 15px; /* Center with markers */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: green;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; /* Space between items */
+  position: relative; /* For marker positioning */
+}
+
+.timeline-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  z-index: 1; /* Ensure marker is above the line */
+}
+
+.timeline-marker.applied {
+  /* No checkmark needed, just a solid circle */
+}
+
+.timeline-marker.sent::after,
+.timeline-marker.accepted::after {
+  content: '✓'; /* Unicode checkmark */
+  color: white;
+  font-size: 14px;
+}
+
+.timeline-text {
+  font-family: sans-serif;
+  color: #333;
+}
