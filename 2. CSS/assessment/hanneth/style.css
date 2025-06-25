@@ -1,0 +1,230 @@
+body
+{
+position: relative;
+background-color: #ddd8c4;
+}
+.div1
+{
+    font-size: 30px;
+    text-align: center;
+    height: 150px;
+    color: white;
+    background: linear-gradient(90deg,rgba(153,40,44,255) 0%, rgba(106,95,117,255) 50%, rgba(39,111,120,255)100%);
+}
+.playful
+{
+    animation: changeposition 1s infinite alternate ;
+}
+@keyframes changeposition
+{
+    from{transform: translateY(0);}
+    to{transform: translateY(20px);}
+}
+.menu
+{
+    display: flex;
+    gap: 30px;
+    margin-left: 380px;
+    margin-top: 10px;
+}
+.about
+{
+ height: 30px;
+ width:150px;
+ border-radius: 20px;
+ padding: 8px;
+justify-content: center;
+align-items: center;
+transition: background-color 2s;
+
+}
+.about:hover
+{
+   background-color:  #e3c85a;
+}
+.gallery
+{
+height: 30px;
+ width:150px;
+ border-radius: 20px;
+ padding: 8px;
+justify-content: center;
+align-items: center;
+transition: background-color 2s;
+}
+.gallery:hover
+{
+    background-color:  #e3c85a;
+}
+.activity
+{
+height: 30px;
+ width:150px;
+ border-radius: 20px;
+ padding: 8px;
+justify-content: center;
+align-items: center;
+transition: background-color 2s;
+}
+.activity:hover
+{
+    background-color:  #e3c85a;
+}
+.contact
+{
+height: 30px;
+ width:150px;
+ border-radius: 20px;
+ padding: 8px;
+justify-content: center;
+align-items: center;
+transition: background-color 2s;
+}
+.contact:hover
+{
+    background-color:  #e3c85a;
+}
+.div2
+{
+    background-color: rgb(243, 240, 236);
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.heads
+{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+.divred
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s;
+    }
+    .divred:hover
+    {
+        transform: scale(1.1);
+		z-index: 1;
+		box-shadow: 1px 1px 1px #000;
+		
+		
+    }
+.divblue
+{
+     height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: blue;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s;
+}
+.divblue:hover
+{
+        transform: scale(1.1);
+		z-index: 1;
+		box-shadow: 1px 1px 1px #000;
+}
+.divgreen
+{
+     height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: green;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s;
+}
+.divgreen:hover
+{
+        transform: scale(1.1);
+		z-index: 1;
+		box-shadow: 1px 1px 1px #000;
+}
+.divyellow
+{
+     height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s;
+}
+.divyellow:hover
+{
+        transform: scale(1.1);
+		z-index: 1;
+		box-shadow: 1px 1px 1px #000;
+}
+.divpurple
+{
+ height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: purple;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s;
+}
+.divpurple:hover
+{
+        transform: scale(1.1);
+		z-index: 1;
+		box-shadow: 1px 1px 1px #000;
+}
+img
+{
+    height: 30px;
+    width: 30px;
+}
+.div3
+{
+    height: 50px;
+    width: 1300px;
+    margin-left: 50px;
+    background-color:#dec052 ;
+    border-radius: 10px;
+    padding: 10px;
+    transition:linear 1s;
+}
+   
+.div3:hover
+{
+ scale: 1.15;
+transition:translate 2s;
+transition-timing-function: linear;
+}
+}
+input
+{
+    border-color: aqua;
+    border-radius: 10px;
+    height: 50px;
+    width: 1000px;
+}
+.butt
+{
+    padding: 16px 32px;
+    transition-duration: 0.4s;
+    background-color: aqua;
+    height: 50px; 
+    width: 1000px;
+     border-radius: 20px; 
+     background-color:red
+}
+.butt:hover
+{
+    background-color: aqua;
+}
