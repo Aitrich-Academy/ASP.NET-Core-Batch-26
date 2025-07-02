@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for each example</h1>
+    <script>
+        const numbers=[];
+        
+        for(let i=1;i<=5;i++)
+    {
+        input=prompt("Enter 5 numbers");
+        numbers.push(input);
+        
+    }
+    numbers.forEach(function(num){
+        document.write("Numbers are:"+num+"<br>");
+    });
+    
+    </script>
+    
+</body>
+</html>

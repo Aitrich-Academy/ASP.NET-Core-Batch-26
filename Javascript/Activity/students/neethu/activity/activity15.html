@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=prompt("Enter a number");
+        num=Math.abs(num);
+        if (num===0)
+    {
+        document.write("Reverse of the number is 0" );
+    }
+    else{
+        let reverse="";
+        while(num>0){
+            reverse+=num%10;
+            num=Math.floor(num/10);
+        }
+        document.write("reverse of the given number is "+reverse );
+    }
+    </script>
+</body>
+</html>
