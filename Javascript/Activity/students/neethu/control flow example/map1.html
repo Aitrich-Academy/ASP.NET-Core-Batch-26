@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Map example</h1>
+    <script>
+        let numbers=[];
+        for(i=1;i<=3;i++)
+    {
+        input=prompt("Enter 3 numbers");
+        numbers.push(input);
+    }
+    let double=numbers.map(function(num){
+        return num*2;
+    });
+    document.write("Doubled Numbers" +double +"<br>");
+    </script>
+</body>
+</html>
