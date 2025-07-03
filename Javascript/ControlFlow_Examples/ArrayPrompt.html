@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>FOREACH with Prompt</h2>
+
+  <script>
+    // Ask user to enter numbers separated by commas
+    let input = prompt("Enter numbers separated by commas (e.g., 1,2,3):");
+    let numbers = input.split(","); // Convert string to array
+
+    // Display each number using forEach
+    numbers.forEach(function(num) {
+      document.write(num.trim() + "<br>");
+    });
+  </script>
+</body>
+</html>

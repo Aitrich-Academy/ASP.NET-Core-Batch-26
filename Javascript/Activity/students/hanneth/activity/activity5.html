@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("Enter the first number");
+        var b=prompt("Enter the second number");
+        let char=prompt("Enter the operator");
+        var c;
+        switch(char)
+        {
+        case'+':c=a+b;
+                document.write("sum is",c);
+                break;
+        case '-':c=a-b;
+                 document.write("the difference is",c);
+                break;
+        case '*': c=a*b;
+                  document.write("The product is",c);
+                  break;
+        case '/':c=a/b;
+                 document.write("result of division:",c);
+                 break;
+        default:document.write("invalid");
+                 break;
+    }
+    </script>
+</body>
+</html>
