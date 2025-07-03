@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arithemetic operation</h1>
+    <script>
+        let number1=prompt("Enter first number:");
+        let number2=prompt("Enter second number:");
+        let day=prompt("Which arithemetic operation do you prefer?");
+        switch(day)
+        {
+            case '+':
+                let sum=Number(number1)+Number(number2);
+                 document.write(number1+"+"+number2+"="+sum);
+                 break;
+            case '-':
+                if(number1>number2){
+                    let diff=Number(number1)-Number(number2);
+                    document.write(number1+"-"+number2+"="+diff);
+                }
+                
+                else{
+                    let diff=Number(number2)-Number(number1);
+                    document.write(number2+"-"+number1+"="+diff);
+                }
+                 
+                 break;
+            case '*':
+                let product=Number(number1)*Number(number2);
+                 document.write(number1+"*"+number2+"="+product);
+                 break;  
+            case '/':
+                let quotient=Number(number1)/Number(number2);
+                 document.write(number1+"/"+number2+"="+quotient);
+                 break;         
+
+        }
+    </script>
+</body>
+</html>
