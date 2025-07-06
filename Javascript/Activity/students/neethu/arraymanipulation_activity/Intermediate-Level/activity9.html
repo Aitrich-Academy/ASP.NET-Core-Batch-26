@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let fruits=["apple", "banana", "apple", "orange"];
+    firstindex=fruits.indexOf("apple");
+    secondindex=fruits.indexOf("apple",firstindex+1);
+    fruits.splice(secondindex,1);
+    document.write(fruits);
+   </script> 
+</body>
+</html>

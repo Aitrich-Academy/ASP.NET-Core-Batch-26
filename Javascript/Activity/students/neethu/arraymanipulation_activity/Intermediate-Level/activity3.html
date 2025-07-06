@@ -1,0 +1,22 @@
+UTF-8<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks=[65, 85, 45, 90, 70];
+        marks.sort(function(a,b){
+            return a-b;
+        });
+        document.write(marks);
+        marks.shift();
+        document.write("<br>"+"after removing lowest mark"+"<br>"+marks);
+        marks.push("88");
+        document.write("<br>"+"after adding new mark at the end"+"<br>"+marks);
+    </script>
+    
+</body>
+</html>

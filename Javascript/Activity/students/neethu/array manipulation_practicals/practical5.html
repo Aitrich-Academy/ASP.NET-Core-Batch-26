@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input=prompt("enter numbers between 10 and 20 seperrated by comma");
+        let numbers=input.split(",");
+        document.write(numbers+"<br>");
+        index=numbers.indexOf("15");
+        document.write("index of number 15 is "+index+"<br>");
+        let check=numbers.includes("18");
+        document.write("statement "+"'number 18 includes is'"+check+"<br>");
+
+    </script>
+</body>
+</html>
