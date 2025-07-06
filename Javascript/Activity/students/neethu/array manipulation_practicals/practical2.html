@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Modification</h1>
+    <script>
+        let fruits=["apple", "banana", "cherry", "date", "fig"];
+        fruits.unshift("orange","grapes");
+        document.write("Fruits list"+"<br>"+fruits+"<br>");
+        fruits.pop();
+        document.write("Fruits list after deleting last fruit from the list"+"<br>"+fruits+"<br>");
+        fruits.splice(1,2,"mango","plums");
+        document.write("Fruits list after replacing 2nd and 3rd fruits"+"<br>"+fruits);
+    </script>
+</body>
+</html>
