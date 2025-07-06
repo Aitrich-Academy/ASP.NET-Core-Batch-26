@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        9.	A user entered duplicate items: ["apple", "banana", "apple", "orange"].
+         Remove the second "apple" using indexOf() and splice().
+    </h1>
+    <script>
+        let array= ["apple", "banana", "apple", "orange"];
+         let index1=array.indexOf("apple");
+         index2=array.indexOf("apple",index1+1);
+         array.splice(index2,1);
+        document.write(array);
+    </script>
+</body>
+</html>

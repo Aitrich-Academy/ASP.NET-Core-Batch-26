@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>8.	You have two arrays of numbers: [2, 4, 6] and [1, 3, 5]. Merge them and sort in descending order.</h1> 
+<script>
+    let a=[2,4,6];
+    let b=[1,3,5];
+    let c=a.concat(b);
+    document.write("Merged array  ",c,"<br>");
+    let nums=c.sort(function(a,b)
+{
+    return b-a;
+}
+);
+document.write(nums);
+</script>
+</body>
+</html>
