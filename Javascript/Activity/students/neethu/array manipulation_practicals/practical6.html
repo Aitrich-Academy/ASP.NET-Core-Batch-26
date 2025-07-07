@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let books=[{title: "Harrypotter",
+                     author: "Author A"
+                    
+                    },{title: "Wimpy Kid",
+                     author: "Author B"},{title: "Hot Mess",
+                     author: "Author C"},{title: "Pride and Prejudice",
+                     author: "Author D"},{title: "The Deep End",
+                     author: "Author E"}];
+        books.forEach(function(book) {
+         document.write("Title: " + book.title + ", Author: " + book.author + "<br>");
+        });
+        let titles=books.map(function(book){
+            return book.title;
+        });
+        document.write("Book titles"+"<br>"+titles+"<br>");
+        books.sort(function(a,b){
+            return a.title.localeCompare(b.title);
+        });
+       books.forEach(function(book) {
+         document.write("Title: " + book.title + ", Author: " + book.author + "<br>");
+        });
+    </script>
+    </script>
+</body>
+</html>

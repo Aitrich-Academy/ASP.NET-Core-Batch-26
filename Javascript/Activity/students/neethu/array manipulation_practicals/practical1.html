@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sorting and Filtering</h1>
+    <script>
+        let input=prompt("Enter random numbers between 1 and 100,  sepearated by comma");
+        let numbers=input.split(",");
+        numbers.sort(function(a,b){
+            return a-b;
+        });
+        document.write("sorted array in ascending order"+"<br>"+numbers+"<br>");
+        numbers.sort(function(a,b){
+            return b-a;
+        });
+         document.write("sorted array in descending order"+"<br>"+numbers+"<br>");
+         let biggest=numbers.filter(function(num){
+            return num>50;
+         });
+         document.write("numbers greater than 50"+"<br>"+biggest+"<br>");
+    </script>
+</body>
+</html>

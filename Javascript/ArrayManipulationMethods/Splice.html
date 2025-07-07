@@ -1,0 +1,24 @@
+<!--splice() — Add/Remove elements-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  let fruits = ["Apple", "Banana", "Orange"];
+  fruits.splice(1, 2, "Grapes"); // remove 1 at index 1, add Grapes
+  document.write(fruits); // Apple,Grapes,Orange
+</script>
+ 
+</body>
+</html>
+
+<!--| Usage           | Code Example                  | Explanation                                                       |
+| --------------- | ----------------------------- | ----------------------------------------------------------------- |
+| **Remove only** | `arr.splice(1, 2);`           | Remove 2 items from index 1                                       |
+| **Add only**    | `arr.splice(1, 0, "Grapes");` | Add "Grapes" at index 1 without removing anything                 |
+| **Replace**     | `arr.splice(1, 1, "Grapes");` | Remove 1 item at index 1, insert "Grapes" — **so it's a replace** |
+-->

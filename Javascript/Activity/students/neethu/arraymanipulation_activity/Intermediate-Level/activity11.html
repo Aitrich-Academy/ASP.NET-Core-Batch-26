@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let features=["login", "signup", "dashboard", "logout"];
+    document.write("array before deletion"+"<br>"+features+"<br>");
+    let index=features.indexOf("dashboard");
+    features.splice(index,1);
+    document.write("array after deletion"+"<br>"+features);
+   </script>
+
+</body>
+</html>
