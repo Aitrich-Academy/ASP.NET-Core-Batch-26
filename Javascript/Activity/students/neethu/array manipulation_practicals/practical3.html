@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Slicing and Splicing</h1>
+    <script>
+        let names=["Alice", "Bob", "Charlie", "Diana", "Eve"];
+        let newnames=names.slice(0,3);
+        document.write("orginal array"+"<br>"+names+"<br>");
+        document.write("new array with first 3 names"+"<br>"+newnames+"<br>");
+        let delnames=names.splice(3,2);
+        document.write("deleted names"+"<br>"+delnames+"<br>");
+
+    </script>
+</body>
+</html>

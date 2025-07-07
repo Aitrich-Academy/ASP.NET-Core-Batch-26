@@ -1,0 +1,100 @@
+.divstyle
+{
+background-color: rgb(187, 189, 189);
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.div1
+{
+    font-size: 40px;
+    text-align: center;
+    height: 150px;
+    color: white;
+    background-color: red;
+    animation-name: anim1;
+    animation-duration: initial;
+}
+@keyframes anim1
+{
+    0%{top:0px; top:10px;}
+    100%{top:10px; top:0px;}
+}
+.div2
+{
+    background-color: rgb(243, 240, 236);
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.heads
+{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+.divred
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.6;
+    transition: 0.3sec;
+}
+.divblue
+{
+     height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: blue;
+    text-align: center;
+    font-weight: bold;
+}
+.divgreen
+{
+     height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: green;
+    text-align: center;
+    font-weight: bold;
+}
+.divyellow
+{
+     height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
+.divpurple
+{
+ height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: purple;
+    text-align: center;
+    font-weight: bold;
+
+}
+.divred:hover
+{
+    opacity: 1;
+    transform: translate(2,2);
+}
+.divyellow
+{
+    background-color:#dec052 ;
+    height: 20px;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
