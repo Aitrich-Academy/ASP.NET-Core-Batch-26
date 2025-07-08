@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Function Examples</title>
+</head>
+<body>
+    <h2>JavaScript Function Examples for Beginners</h2>
+    <script>
+        // 1. Basic Function with No Parameters
+        function greet() {
+            console.log("1. Hello, students!");
+        }
+        greet();  // Output: Hello, students!
+
+        // 2. Function with Parameters
+        function greetStudent(name) {
+            console.log("2. Hello, " + name + "!");
+        }
+        greetStudent("Apsara");  // Output: Hello, Apsara!
+
+        // 3. Function with Return Value
+        function add(a, b) {
+            return a + b;
+        }
+        let result = add(3, 4);
+        console.log("3. Sum is: " + result);  // Output: Sum is: 7
+
+        // 4. Function Expression
+        let multiply = function(x, y) {
+            return x * y;
+        };
+        console.log("4. Multiply result: " + multiply(5, 2));  // Output: 10
+
+        // 5. Arrow Function
+        let subtract = (a, b) => a - b;
+        console.log("5. Subtract result: " + subtract(10, 4));  // Output: 6
+
+        // 6. Function Inside Function (Nested Function)
+        function outer() {
+            function inner() {
+                console.log("6. Inside inner function");
+            }
+            inner();
+        }
+        outer();  // Output: Inside inner function
+    </script>
+</body>
+</html>
