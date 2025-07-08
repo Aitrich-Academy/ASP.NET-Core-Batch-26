@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>3.	Given an array of marks [65, 85, 45, 90, 70], remove the lowest mark and add a new mark 88 at the end.</h1>
+    <script>
+        let marks= [65, 85, 45, 90, 70];
+        let result=marks.sort(function(a,b)
+    {
+        return a-b;
+    });
+    document.write(result,"<br>");
+    result.shift();
+    document.write("After deleting the lowest mark   ",result,"<br>");
+    result.splice(4,1,"88");
+    document.write("After addition    ",result);
+    </script>
+</body>
+</html>

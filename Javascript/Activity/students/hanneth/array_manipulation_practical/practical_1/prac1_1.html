@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let input = prompt("Enter numbers between 1 to 100 separated by commas (e.g., 1,2,3):");
+    let numbers = input.split(","); 
+
+    
+    numbers.forEach(function(num) {
+      document.write(num.trim() + "<br>");
+    });
+    </script>
+</body>
+</html>
