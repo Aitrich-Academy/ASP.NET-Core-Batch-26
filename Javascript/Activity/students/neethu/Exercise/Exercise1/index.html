@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"> </script>
+</head>
+<body>
+    <div class="box1">
+        <div class="images">
+            <div class="image1"><img src="images/Group 8.png" width="40px"></div>
+            <div class="image2"><img src="images/Hire me Now.png"></div>
+        </div>
+        <div class="movimage">
+            <div class="slider_container">
+                 <img src="images/Group.png" class="slider_image">
+                 <img src="images/Group.png" class="slider_image">
+                 <img src="images/Group.png" class="slider_image">
+                 <img src="images/Group.png" class="slider_image">
+                 <img src="images/Group.png" class="slider_image">
+                 <img src="images/Group.png" class="slider_image">
+                 <img src="images/Group.png" class="slider_image">
+                 <img src="images/Group.png" class="slider_image">
+            </div>
+           
+            
+        </div>
+        
+    </div>
+    <div class="box2">
+        <h1 >Sign in to Admin Dashboard</h1>
+        <form name="myForm" >
+            <br>
+            <label id="l1">Email</label><br>
+            <input type="text" name="email" id="email" class="mailtext" placeholder="Input your email in here" onblur="return validateFormat()">
+            <div id="emailerror" class="error_message"></div>
+            <div id="emailerror1" class="error_message"></div>
+            <br><br><br><br>
+            <label id="l2">Password</label><br>
+            <input type="password" name="password" id="password" class="passtext" placeholder="Input your password in here">
+            <div id="passworderror" class="error_message"></div>
+            <br><br><br>
+            <div class="forgot"><h4 >forgot password?</h4></div>
+            <input type="button" name="signin" id="signin" value="Sign In" class="sign_btn" onclick="validateForm()">
+            
+        </form>
+    </div>
+</body>
+</html>
