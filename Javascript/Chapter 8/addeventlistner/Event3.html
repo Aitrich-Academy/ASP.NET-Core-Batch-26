@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over</title>
+</head>
+<body>
+
+<p id="hoverPara">Move your mouse over me!</p>
+
+<script>
+    var para = document.getElementById("hoverPara");
+
+    para.addEventListener("mouseover", function() {
+        para.style.color = "red";
+    });
+
+    para.addEventListener("mouseout", function() {
+        para.style.color = "black";
+    });
+</script>
+
+</body>
+</html>

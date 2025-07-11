@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KeyDown Example</title>
+</head>
+<body>
+
+<h3>Press the "A" key on your keyboard</h3>
+
+<script>
+    // Listen for keydown event on the whole page
+    document.addEventListener("keydown", function(event) {
+        // Check if the key pressed is 'a' or 'A'
+        if (event.key === "a" || event.key === "A") {
+            alert("You pressed the 'A' key!");
+        }
+    });
+</script>
+
+</body>
+</html>
