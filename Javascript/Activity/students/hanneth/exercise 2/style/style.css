@@ -1,0 +1,56 @@
+.sidebar
+{
+    background-color: #3f189c;
+    width: 30%;
+    height: 1000px;
+    color: white;
+}
+.midbar
+{
+    height:1000px;
+    width: 900px;
+    border-radius: 50px;
+    background-color:#f2f2f2 ;
+    margin-left: 300px;
+    margin-top: -1000px;
+}
+.imgstyle
+{
+   
+   margin-left: 50px;
+    height: 30px;
+    width: 30px;
+
+}
+.tdstyle
+{
+    margin-left: 50px;
+    height: 50px;
+    width: 100px;
+}
+.textBox{  
+background-image:url("images/Group.png");   
+background-position:right;   
+background-color: #f2f2f2;
+background-repeat:no-repeat;   
+padding-left:17px;
+border-radius: 20px;
+height: 40px; 
+width: 300px;
+}
+.textBox
+{
+height: 30px;
+width: 300px;
+border-radius: 10px;
+background-color: #edf1f7;
+}
+.button
+{
+    background-color: #3f189c;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 100px;
+}
