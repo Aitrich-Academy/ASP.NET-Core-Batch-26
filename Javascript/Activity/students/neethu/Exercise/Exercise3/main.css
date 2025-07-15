@@ -1,0 +1,89 @@
+body
+{
+    position: relative;
+}
+.sidebar{
+    width: 20%;
+    height: 1000px;
+    background-color: #3f189c;
+    border: 1px solid #3f189c;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    
+}
+.logo{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+.side_menu{
+
+    margin-left:70px;
+    margin-top: 150px;
+    line-height: 50px;
+}
+.container{
+    position: absolute;
+    top: 0;
+    margin-left: 18%;
+    background-color: #F2F2F2;
+    width: 950px;
+    height: 1000px;
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 50px;
+}
+.search{
+    width: 300px;
+    background-color: #E3E3E3;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #E3E3E3;
+    background-image: url(images/ic_search\ \(1\).png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.account{
+    width: 300px;
+    height: 30px;
+    border-bottom: 3px solid gray;
+    margin-left: 100px;
+    margin-top: 100px;
+    color: gray;
+}
+.box1{
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: light black;
+    
+}
+.inputbox{
+    width: 60%;
+    height: 40px;
+    background-color: #EDF1F7;
+    border-radius: 10px;
+    border: 1px solid #EDF1F7;
+}
+.update_btn{
+    width: 150px;
+    height: 50px;
+    background-color:#3f189c ;
+    border: 1px solid #3f189c;
+    color: white;
+    border-radius: 5px;
+    margin-left: 110px;
+
+}
+.error_message{
+    color: red;
+    font-size: small;
+    display: block;
+}

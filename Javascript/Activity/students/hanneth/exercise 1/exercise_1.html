@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body><div>
+    <div class="left_div">
+        <img src="images/image.jpg">
+        <div style="margin-left: 300px;margin-top: -750px; width: 300px; height: 300px;font-size: 60px;color: rgb(20, 20, 107);position: relative;"><pre>J Jobie</pre></div>
+    </div>
+    <div style="margin-left:50% ;">
+        <p style="font-size: 30px;">Sign in to  Admin Dashboard</p><br>
+        <form onsubmit="return  validateForm()">
+        <label><b>Email</b></label><br>
+        <input type="text"  id="email" placeholder="input your email in here" style="width: 300px;height: 50px;border-radius: 10px;"  onblur="validateMail()"><br><br>
+        <p id="mailerr"></p>
+        <p id="mailp" style="color:red"></p>
+        <label><b>Password</b></label><br>
+        <input type="password" id="password"placeholder="input your password in here" style="width: 300px;height: 50px;border-radius: 10px;""><br><br>
+        <p id="passwordp" style="color: red;"></p>
+        <label style="color: rgb(183, 177, 177);"><pre>                     Forgot password?</pre></label><br>
+        <button style="background-color: rgb(36, 36, 225);color: white; width: 300px; height: 50px;border-radius: 10px;">Sign In</button>
+        </form>
+    </div>
+</div>
+<script src="script/script.js"></script>
+</body>
+</html>
