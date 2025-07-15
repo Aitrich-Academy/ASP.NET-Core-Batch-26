@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Example</title>
+</head>
+<body>
+
+<input type="text" id="nameInput" placeholder="Type your name">
+<p id="output"></p>
+
+<script>
+    var input = document.getElementById("nameInput");
+
+    input.addEventListener("input", function() {
+        document.getElementById("output").innerText = "You typed: " + input.value;
+    });
+</script>
+
+</body>
+</html>
