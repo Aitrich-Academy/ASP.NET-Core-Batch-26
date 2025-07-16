@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/Group 8.png" width="60px">&nbsp;&nbsp;<i><b> Jobie </b></i>
+        </div>
+        <div class="side_menu">
+            
+            <img src="images/home (2).png" width="20px" height="20px">&nbsp;&nbsp;Dashboard<br>
+            <img src="images/image 10.png"width="20px" height="20px">&nbsp;&nbsp;Job Providers<br>
+            <img src="images/image 6.png"width="20px" height="20px">&nbsp;&nbsp;New Registrations<br>
+            <img src="images/image 9.png"width="20px" height="20px">&nbsp;&nbsp;Job Seekers<br>
+            <img src="images/ic_search.png"width="20px" height="20px">&nbsp;&nbsp;Jobs<br>
+            <img src="images/frame.png"width="20px" height="20px">&nbsp;&nbsp;My Profile<br>
+            <img src="images/message.png"width="20px" height="20px">&nbsp;&nbsp;Messages<br>
+            <img src="images/image 7.png"width="20px" height="20px">&nbsp;&nbsp;Settings<br>
+            <img src="images/logout copy.png"width="20px" height="20px">&nbsp;&nbsp;Logout<br>
+                   
+        </div>
+    
+            
+            
+    </div>
+
+    <div class="container">
+        <table style="width: 950px;">
+            <tr>
+                <td style="text-align: right;">
+                    <img src="images/ic_menu.png" width="30px">
+                </td>
+                <td>
+                    <p style="color: black;font-size: 25px;font-weight: bold;">My Profile</p>
+                </td>
+                <td colspan="3">
+                    <form >
+                        <input type="text" name="Search" class="search" placeholder="Search something Here...." >
+                    </form>
+                </td>
+                <td>
+                    <img src="images/notification.png" width="40px">
+                    <img src="images/notification (1).png"width="40px">
+                </td>
+                <td>
+                    <img src="images/profilePicture.png" width="50px">
+
+                </td>
+                <td>
+                    <b>Oda Dink</b><p style="color: gray;">Super Admin</p>
+                </td>
+            </tr>
+        </table>
+        <div class="account">
+            <img src="images/user (1).png" width="20px">&nbsp;&nbsp;Account
+        </div>
+        <div class="box1">
+            <br>
+            <img src="images/profilePicture.png" style="margin-left: 10px; ">
+            <form name="myForm" style="margin-left: 30px;margin-top: 25px;">
+                <label>Full Name</label><br>
+                <input type="text" name="fname" id="fname" class="inputbox" onblur="return validateCharacter1(this.value)">
+                <div id="fnameerror" class="error_message"></div>
+                <div id="fnameerror1" class="error_message"></div>
+                <br><br><br>
+                <label>Username</label><br>
+                <input type="text" name="uname" id="uname" class="inputbox" onblur="return validateCharacter2(this.value)">
+                <div id="unameerror" class="error_message"></div>
+                <div id="unameerror1" class="error_message"></div>
+                <br><br><br>
+                <label>Email</label><br>
+                <input type="text" name="email" id="email" class="inputbox" placeholder="abcd@domain.com" onblur="return validateEmail()">
+                <div id="emailerror" class="error_message"></div>
+                <div id="emailerror1" class="error_message"></div>
+                <br><br><br>
+                <label>Phone No</label><br>
+                <input type="text" name="phone" id="phone" class="inputbox" placeholder="+91 1234567890" maxlength="14" onblur="return validatePhone()">
+                <div id="phoneerror" class="error_message"></div>
+                <div id="phoneerror1" class="error_message"></div>
+                <br><br><br>
+                <input type="button" name="update" id="update" value="Update Details" class="update_btn" onclick="return validateForm()">
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
