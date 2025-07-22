@@ -1,0 +1,17 @@
+.sidebar
+{
+    background-color: #0f7fbe;
+    width: 20%;
+    height: 1000px;
+    font-size: 20px;
+    color: white;
+}
+
+button
+{
+    height: 36px;
+    width: 130px;
+    background-color: rgb(215, 147, 69);
+    color: white;
+    border-radius: 15px;
+}
