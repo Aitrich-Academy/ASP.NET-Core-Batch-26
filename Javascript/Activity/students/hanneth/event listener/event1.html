@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" style="color: blueviolet; font-size: x-large;">hi its me hanneth!!!</p>
+    <button id="button1" style="width: 300px; height: 40px; background-color: brown;">click me</button>
+   <br><button id="button2" style="width: 300px; height: 40px; background-color: rgb(56, 165, 42);">change text</button>
+  <input type="text" id="nameInput" placeholder="Type your name">
+<p id="output"></p>
+
+  <script>
+        var btn=document.getElementById("button1");
+        btn.addEventListener("click",function()
+    {
+        alert("button clicked");
+    });
+    var btn2=document.getElementById("button2");
+    btn2.addEventListener("click",function()
+    {
+        document.getElementById("demo").innerHTML="Bye bye hanneth!!!";
+    });
+    var hoverpara=document.getElementById("demo");
+    hoverpara.addEventListener("mouseover",function()
+{
+    hoverpara.style.color="red";
+});
+hoverpara.addEventListener("mouseout",function()
+{
+    hoverpara.style.color="blueviolet";
+});
+ var input = document.getElementById("nameInput");
+
+    input.addEventListener("input", function() {
+        document.getElementById("output").innerText = "You typed: " + input.value;
+    });
+    </script>
+</body>
+</html>
