@@ -29,22 +29,22 @@ row that deletes only that row</p>
         function addrow()
         {
             var table=document.getElementById("table1");
-            var row=table.insertRow();
-            var cell1=row.insertCell();
-            var cell2=row.insertCell();
-            cell1.innertext=document.getElementById("name").value;
-            cell2.innertext=document.getElementById("email").value;
+            var row=table.insertRow(-1);
+            var cell1=row.insertCell(0);
+            var cell2=row.insertCell(1);
+            cell1.textContent=document.getElementById("name").value;
+            cell2.textContent=document.getElementById("email").value;
             cell1.style.height="50px";
             cell2.style.height="50px";
             table.appendChild("cell1");
            table.appendChild("cell2");
-            table1.appendChild("table");
+          //  table.appendChild("table1");
         }
         function deleterow()
         {
             let table=document.getElementById("table1");
-           let index1=this.index;
-            table.deleteRow(index1);
+         //  let index1=this.index;
+            table.deleteRow(1);
         }
 
     </script>
