@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Create an HTML page with two input
+fields for “Name” and “Email”.
+
+On clicking the "Add" button, a new row should be added to a table
+with the entered data. Also include a "Delete" button next to each
+row that deletes only that row</p>
+<label>Name:</label>
+<input type="text" id="name">
+<label>Email</label>
+<input type="email"  id="email"><br><br>
+<table border="2" id="table1" style="width: 200px; height:50px;">
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+    </tr>
+</table>
+<br><br>
+    <button id="btn1" onclick="addrow()">add</button>
+    <button id="btn2" onclick="deleterow()">delete </button>
+    <script>
+        function addrow()
+        {
+            var table=document.getElementById("table1");
+            var row=table.insertRow();
+            var cell1=row.insertCell();
+            var cell2=row.insertCell();
+            cell1.innertext=document.getElementById("name").value;
+            cell2.innertext=document.getElementById("email").value;
+            cell1.style.height="50px";
+            cell2.style.height="50px";
+            table.appendChild("cell1");
+           table.appendChild("cell2");
+            table1.appendChild("table");
+        }
+        function deleterow()
+        {
+            let table=document.getElementById("table1");
+           let index1=this.index;
+            table.deleteRow(index1);
+        }
+
+    </script>
+</body>
+</html>
