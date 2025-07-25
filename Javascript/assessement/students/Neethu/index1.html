@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #add_btn{
+            width: 100px;
+            height: 20px;
+            background-color: blue;
+            color: white;
+        }
+        #del_btn{
+            width: 100px;
+            height: 20px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form name="myForm">
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+    <label>Email:</label><br>
+    <input type="email" id="email"><br><br>
+    <input type="button" id="add_btn" value="ADD" onclick="addData()">
+    <input type="button" id="del_btn" value="DELETE" onclick="deleteData()">
+    </form>
+    <br><br><br>
+    <table border="1" id="tables" style="border: 1px solid black;">
+        <tr>
+            <th >Name</th>
+            <th>Email</th>
+        </tr>
+        
+    </table>
+    <script>
+        function addData()
+        {
+            var name=document.myForm.name.value;
+            var email=document.myForm.email.value;
+           let tables=document.getElementById("tables");
+           let row=tables.insertRow(1);
+           let cell1=row.insertCell(0);
+           let cell2=row.insertCell(1);
+           cell1.style.height="10px";
+           cell2.style.height="10px";
+           cell1.textContent=name;
+           cell2.textContent=email;
+
+           tables.appendChild("cell1")  ;
+           tables.appendChild("cell2")  ;    
+        }
+        function deleteData()
+        {
+            var name=document.myForm.name.value;
+            var email=document.myForm.email.value;
+            let tables=document.getElementById("tables");
+            tables.deleteRow(1);
+
+        }
+    </script>
+</body>
+</html>
