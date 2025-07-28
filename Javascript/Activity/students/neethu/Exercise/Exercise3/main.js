@@ -10,7 +10,7 @@ function validateCharacter1(inputChar) {
   return true;
 }
 
--function validateCharacter2(inputChar){
+function validateCharacter2(inputChar){
     const regex= /^[a-zA-Z0-9]+$/;
     const errorEl = document.getElementById("unameerror");
   errorEl.textContent = "";
@@ -86,13 +86,24 @@ function validatePhone(){
 '''''''''''''''''''''''''''''''''''''''''''''     
 }*/
 function displayDetails(){
-    var fname=document.myForm.fname.value.trim();
-    var uname=document.myForm.uname.value.trim();
-    var email=document.myForm.email.value.trim();
-    var phone=document.myForm.phone.value.trim();
-    let popup=window.open("","PopupWindow","width=400,height=300",600,400);
-    popup.document.write("Entered Details are:"+"<br");
-    popup.document.write("<b>"+fname+"<b>");
-    popup.document.write("Username:"+uname+"<br>"+"Email:"+email+"<br>"+"Phone:"+phone);
+    if (!validateForm()) return;
+
+    const fname = document.myForm.fname.value.trim();
+    const uname = document.myForm.uname.value.trim();
+    const email = document.myForm.email.value.trim();
+    const phone = document.myForm.phone.value.trim();
+
+    const popup = document.querySelector(".display");
+
+    if (popup) {
+        popup.style.display = "block";
+        popup.innerHTML = `
+            <h3>Entered Details are:</h3>
+            <p><strong>Full Name:</strong> ${fname}</p>
+            <p><strong>Username:</strong> ${uname}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+        `;
+    }
 
 }
