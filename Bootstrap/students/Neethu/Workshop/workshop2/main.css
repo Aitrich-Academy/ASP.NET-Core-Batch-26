@@ -1,0 +1,83 @@
+body{
+    position: relative;
+    overflow: hidden;
+}
+.forgot{
+    margin-left: 60%;
+     color: #9A9AB0;
+     cursor: pointer;
+}
+.forgot:hover{
+    color: #5541D7;
+}
+.wid1{
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+
+}
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.row-grid{
+    margin-top: 23%;
+}
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(233, 226, 226);
+    outline: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    background-color: #5541D7;
+    border: 1px solid #5541D7;;
+
+}
+button:hover{
+    color: #4c2bdc;
+    background-color: rgb(217, 219, 231);
+    font-weight: bold;
+}
+.form-control{
+    border: 2px solid #5541D7;
+}
+input:hover{
+     background-color: #e7e5f071;
+    border: 2px dotted #4c2bdc;
+}
+#pwd,#uname{
+    border: 2px solid #5541D7; 
+}
+.wid3{  
+    animation: 2s ease-out 0s 1 slideInFromBottom;    
+   
+  }
+        @keyframes slideInFromBottom {
+            0% {
+            transform: translateY(100%);
+            }
+            100% {
+            transform: translateY(0);
+            }
+        }
+.login{
+    margin-left:829px;
+    margin-top: -8px;
+    position: absolute;
+    width: 700px;
+    height: 900px;
+    background-color: #ffffff;
+}
+.img-cur{
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 837px;
+    height: 744px;
+    margin-left: -8px;
+    margin-top: -8px;
+}
