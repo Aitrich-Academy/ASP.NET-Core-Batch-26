@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primeorodd", "primeorodd\primeorodd.csproj", "{009F17EE-7E45-46CE-8585-BFD2E8244366}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{009F17EE-7E45-46CE-8585-BFD2E8244366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009F17EE-7E45-46CE-8585-BFD2E8244366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009F17EE-7E45-46CE-8585-BFD2E8244366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009F17EE-7E45-46CE-8585-BFD2E8244366}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5011B2B2-4ADC-42DB-A889-87C481E6DFD4}
+	EndGlobalSection
+EndGlobal
