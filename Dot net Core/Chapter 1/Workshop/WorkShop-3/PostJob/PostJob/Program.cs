@@ -21,7 +21,7 @@ namespace PostJob
  
             Jobs[] jobs = new Jobs[10];
 
-string choice;
+            string choice;
           
             do
             {

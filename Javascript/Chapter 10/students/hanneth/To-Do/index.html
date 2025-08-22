@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div style="background-color: #f4f4f9; ">
+ 
+<div style="height: 300px;width: 700px; background-color: white;margin-left: 400px;margin-top: 200px; margin-bottom: 1000px;
+border-radius: 10px;display:inline-block" >
+        <h1 style="margin-left: 200px;">To-Do-List</h1>
+        <input type="text" id="text1" placeholder="Enter your Task......." style="width: 400px;height:30px; margin-left: 100px;border-radius: 5px;"><br><br><br>
+        <button onclick="return getlist()" style="background-color: green; width: 150px;height: 40px;border-radius: 10px;margin-left: 200px; color: white;">Add Task</button>
+    <div>
+        <p id="p1" style="margin-left: 20px;"></p>
+        <button id="btn1" style="background-color: blue; width: 200px;height: 30px;border-radius: 10px;margin-left: 200px;color: white; " onclick="mark()">Mark as Completed</button>
+        <button style="background-color: red; width: 100px;height: 30px;border-radius: 10px;margin-left: 100px; color: white; " onclick="remove()">Remove</button>
+    </div>
+    </div></div>
+    <script>
+        function getlist()
+        {
+            text1= document.getElementById("p1");
+            text2=document.getElementById("text1");
+            text1.textContent=text2.value;
+        }
+        function mark()
+        {
+
+           var text1=document.getElementById("p1");
+          text1.style.textDecoration = "line-through";
+          var text2=document.getElementById("btn1");
+          text2.style.textDecoration="Line-through";
+
+        }
+       function remove()
+       {
+        text1=document.getElementById("p1").value;
+        text1.remove();
+       }
+    </script>
+</body>
+</html>
