@@ -58,7 +58,6 @@ namespace JobProvider.Manager
         {
             try
             {
-                //Console.WriteLine("Please enter your email:");
                 string email = GetEmail();
 
                 Console.WriteLine("Please enter your password:");
