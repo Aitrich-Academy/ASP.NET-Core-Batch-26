@@ -69,7 +69,7 @@ insert into Department values
 (412,222,'Computer'),
 (413,221,'Machanical')
 
-update Department set name='Computer' where DID=412
+update Department set name='Computer science' where DID=412
 update Department set name='Mechanical' where DID=413
 select * from Department
 
@@ -167,4 +167,74 @@ inner join professor
 on  Subject.Professor=professor.PID
 order by Subject.Name
 
+-----------------
+stored procedures
+-----------------
 
+create procedure insertcollege
+(@cid int,
+@university int,
+@dean int,
+@name varchar(20))
+as
+begin
+insert into college values (@cid,@university,@dean,@name)
+end
+insertcollege 223,123,312,'St Marys College'
+delete from College where cid=223
+
+select * from college
+
+create procedure updatecollege
+(@cid int,
+@university int,
+@dean int,
+@name varchar(20))
+as
+begin
+update College set University= @university,dean = @dean,name = @name where CID=@cid
+end
+drop procedure updatecollege
+
+updatecollege 223,124,312,'Government college'
+
+create procedure deletecollege
+(@cid int)
+as
+begin
+delete from College where CID=@cid
+end
+
+exec deletecollege 221
+select * from student
+
+create procedure retrievestudentdetails
+as
+begin
+select * from Student 
+where student.Department =412
+end
+drop procedure retrievestudentdetails
+
+retrievestudentdetails
+
+
+create function listDean
+(@collegeid varchar(30))
+returns table
+as 
+return 
+select Dean,University from College where @collegeid=CID)
+
+select * from dbo.listdean(221) 
+
+create function underUniversity
+(@university varchar(30))
+returns table
+as
+return
+select cid from College where University=@university
+
+select * from college
+
+select * from  dbo.underUniversity(123)
