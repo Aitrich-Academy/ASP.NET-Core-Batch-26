@@ -1,0 +1,36 @@
+﻿@page "/"
+@model LoginApp_DTO.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+<form method="post">
+    <div>
+        <label>FirstName</label>
+        <input asp-for="Input.FirstName" />
+    </div>
+    <div>
+        <label>LastName</label>
+        <input asp-for="Input.LastName" />
+    </div>
+    <div>
+        <label>Email</label>
+        <input asp-for="Input.Email" />
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="Input.Password" />
+    </div>
+
+    
+        <button type="submit">Register</button> 
+   
+    
+</form>
+
+@if(!string.IsNullOrEmpty(Model.Message))
+{
+   <p>@Model.Message</p>
+}

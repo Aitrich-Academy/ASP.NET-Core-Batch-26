@@ -1,0 +1,19 @@
+﻿@page
+@model LoginApp_DTO.Pages.HomeModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>@Model.WelcomeMessage</h2>
+
+@if(@Model.IsLoggedIn)
+{
+    <form method="post" asp-page-handler="Logout">
+        <button type="submit">Logout</button>
+    </form>
+}
+else
+{
+    <a asp-page="/Register">Register</a>
+    <a asp-page="/Login">Login</a>
+}

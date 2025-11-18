@@ -1,0 +1,32 @@
+﻿@page 
+@model LoginApp_DTO.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<h1>Login</h1>
+
+<form method="post">
+
+    <div>
+        <label asp-for="Input.Email">Email</label><br />
+        <input asp-for="Input.Email" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Input.Password">Password</label><br />
+        <input asp-for="Input.Password" />
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+
+    </div>
+    <div style="margin-top:12px">
+        <button type="submit">Login</button>
+    </div>
+</form>
+
+@if(!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+  <p style="color:red">@Model.ErrorMessage</p>
+}
+
+<p style="margin-top:10px">Don't you have an account?<a asp-page="/Register">Register</a></p>
