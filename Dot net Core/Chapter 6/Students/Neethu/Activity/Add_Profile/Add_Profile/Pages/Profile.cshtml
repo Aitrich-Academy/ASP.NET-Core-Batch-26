@@ -1,0 +1,25 @@
+﻿@page
+@model Add_Profile.Pages.ProfileModel
+@{
+    ViewData["Tittle"] = "Profile";
+}
+
+<h1>My Profle</h1>
+
+@if(Model.user!=null)
+{
+    <p>FirstName:@Model.user.FirstName</p>
+    <p>LastName:@Model.user.LastName</p>
+    <p>Email:@Model.user.Email</p>
+
+    <form method="post">
+        <button type="submit">Edit Profile</button>|
+        <a asp-page="/Dashboard">Back To List</a>
+
+
+    </form>
+}
+else
+{
+    <p>No profile found. Please login.</p>
+}

@@ -1,0 +1,19 @@
+﻿@page
+@model Add_Profile.Pages.EditProfileModel
+@{
+    ViewData["Title"] = "EditProfile";
+}
+
+<form method="post">
+    <div>
+        <label asp-for="Input.FirstName">FirstName</label>
+        <input asp-for="Input.FirstName" />
+
+    </div>
+    <div>
+        <label asp-for="Input.LastName">LastName</label>
+        <input asp-for="Input.LastName" />
+
+    </div>
+    <button type="submit">Save</button>
+</form>
