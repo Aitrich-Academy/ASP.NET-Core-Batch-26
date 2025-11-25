@@ -1,0 +1,16 @@
+﻿@page
+@model Service_Repo_Model.Pages.ProfileModel
+@{
+    ViewData["Title"] = "My Profile";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.user!=null)
+{
+    <p>FirstName:@Model.user.FirstName</p>
+    <p>LastName:@Model.user.LastName</p>
+    <p>Email:@Model.user.Email</p>
+
+    <a asp-page="/EditProfile">Edit</a>
+    <a asp-page="/DashBoard">Back To List</a>
+}

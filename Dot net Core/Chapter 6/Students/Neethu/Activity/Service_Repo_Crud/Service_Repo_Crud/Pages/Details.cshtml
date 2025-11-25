@@ -1,0 +1,43 @@
+﻿@page
+@model Service_Repo_Crud.Pages.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Details</h1>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model=>model.book.Title);
+    </dt>
+    <dd>
+        @Html.DisplayFor(model=>model.book.Title);
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.book.Genre);
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.book.Genre);
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.book.Author);
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.book.Author);
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.book.PublishDate);
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.book.PublishDate);
+    </dd>
+
+    </dl>
+
+    <div>
+        <a asp-page="Edit" asp-route-id="@Model.book.BookId">Edit</a>
+        <a asp-page="Index">Back To List</a>
+    </div>
