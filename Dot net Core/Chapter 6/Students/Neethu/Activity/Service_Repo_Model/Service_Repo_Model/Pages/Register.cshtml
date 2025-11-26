@@ -1,0 +1,17 @@
+﻿@page "/"
+@model Service_Repo_Model.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+
+}
+<h1>Register</h1>
+
+<form method="post">
+    <div><input asp-for="Input.FirstName" placeholder="FirstName" /></div>
+    <div><input asp-for="Input.LastName" placeholder="LastName" /></div>
+    <div><input asp-for="Input.Email" placeholder="Email" /></div>
+    <div><input asp-for="Input.Password" placeholder="Password" /></div>
+    <button type="submit">Register</button>
+</form>
+
+<p>@Model.Message</p>
