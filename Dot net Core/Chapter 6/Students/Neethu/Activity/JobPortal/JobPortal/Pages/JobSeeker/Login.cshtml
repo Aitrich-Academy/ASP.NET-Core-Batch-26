@@ -1,0 +1,26 @@
+﻿@page
+@model JobPortal.Pages.JobSeeker.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<body style="background-color:blueviolet">
+
+    <div style="margin-top:100px;margin-left:300px;width:400px;height:200px;background-color:white">
+
+        <h2 style="margin-top:50px;margin-left:140px">Login</h2>
+
+        <div>
+            <form method="post">
+                <div style="margin-left:140px">
+                    <input asp-for="Email" placeholder="Email"/><br /><br />
+                    <input asp-for="Password" placeholder="Password" type="password" /><br /><br />
+                    <button type="submit" style="margin-left:40px" class="btn btn-primary">Login</button>
+
+                </div>
+            </form>
+            <p>@Model.ErrorMessage</p>
+        </div>
+    </div>
+</body>
+
