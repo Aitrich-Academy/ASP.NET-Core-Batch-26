@@ -1,0 +1,35 @@
+﻿@page
+@model JobPortal.Pages.JobSeeker.AppliedJobscshtmlModel
+@{
+    ViewData["Title"] = "Applied Jobs";
+}
+<body style="background-color:beige">
+    <h2 style="color:brown">My Job Applications</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Employment Type</th>
+                <th>Salary Range</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var job in Model.Application)
+            {
+                <tr>
+                    <td>@job.JobTitle</td>
+                    <td>@job.Company</td>
+                    <td>@job.Location</td>
+                    <td>@job.JobType</td>
+                    <td>@job.Salary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+
+<a asp-page="/JobSeeker/DashBoard" class="btn btn-outline-success">Back to Home</a>

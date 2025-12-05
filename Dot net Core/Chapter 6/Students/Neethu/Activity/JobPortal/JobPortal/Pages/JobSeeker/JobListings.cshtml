@@ -1,0 +1,39 @@
+﻿@page
+@model JobPortal.Pages.JobSeeker.JobListingsModel
+@{
+    ViewData["Title"] = "JobList";
+}
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Employment Type</th>
+            <th>Salary Range</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var job in Model.JobPosts)
+        {
+            <tr>
+                <td>@job.JobTitle</td>
+                <td>@job.Company</td>
+                <td>@job.Location</td>
+                <td>@job.JobType</td>
+                <td>@job.Salary</td>
+                <td>
+                    <form method="post">
+                        <button type="submit" asp-route-id="@job.JobId" value="app" class="btn btn-warning btn-sm" >Apply</button>
+                        
+                    </form>
+                    
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>@Model.Message</p>
+                <p><a asp-page="/JobSeeker/DashBoard">Back tol list</a></p>

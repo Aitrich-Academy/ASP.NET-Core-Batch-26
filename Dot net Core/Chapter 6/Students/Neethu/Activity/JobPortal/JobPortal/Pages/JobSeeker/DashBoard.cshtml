@@ -1,0 +1,13 @@
+﻿@page
+@model JobPortal.Pages.JobSeeker.DashBoardModel
+@{
+    ViewData["Title"] = "DashBoard";
+}
+
+<body style="background-color:cyan">
+
+    <h1>Welcome,@Model.UserName!!!!</h1>
+    <a asp-page="JobListings" class="btn btn-warning">Job Vacancy</a>
+    <a asp-page="AppliedJobscshtml" asp-route-id="@Model.USERID" class="btn btn-danger">Applied Jobs</a>
+    <a asp-page="Logout" class="btn btn-secondary">Logout</a>
+</body>
