@@ -1,0 +1,15 @@
+﻿@page
+@model AddProfile.Pages.DashboardModel
+<h2>Dashboard</h2>
+
+@if (Model.UserName != null)
+{
+    <p>Welcome, @Model.UserName!</p>
+    <a asp-page="/Profile">My Profile</a>
+ 
+    <a asp-page="/Logout">Logout</a>
+}
+else
+{
+    <p>Please <a asp-page="/Login">Login</a></p>
+}

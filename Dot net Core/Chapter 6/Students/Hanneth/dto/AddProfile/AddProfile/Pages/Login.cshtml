@@ -1,0 +1,17 @@
+﻿@page
+@model AddProfile.Pages.LoginModel
+<h2>Login</h2>
+<form method="post">
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="Password" />
+    </div>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+</form>
+<p>@Model.ErrorMessage</p>
