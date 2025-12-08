@@ -7,7 +7,7 @@
         Console.WriteLine("First element: " + firstList.First());
 
         var emptyFirstList = new List<string>();
-        Console.WriteLine(emptyFirstList.First()); // ❌ InvalidOperationException
+       // Console.WriteLine(emptyFirstList.First()); // ❌ InvalidOperationException
 
         var numbers = new List<int> { 4, 6, 8, 9, 11, 14, 17, 20 };
 
