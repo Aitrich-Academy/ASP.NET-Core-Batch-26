@@ -1,0 +1,81 @@
+﻿@page "/"
+
+@inject IBookService BookService
+
+<PageTitle>Index</PageTitle>
+
+<h1>Index</h1>
+
+<form @onsubmit="SearchBook">
+    <div class="form-group">
+        <input type="text" name="search" class="form-control" placeholder="Search By Title"  @bind="Search" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Search</button>
+</form>
+
+<p>Total Books:@TotalCount</p>
+
+<p><NavLink class="nav-link" href="/Create">Add Books</NavLink></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var item in BookList)
+        {
+            var editurl = $"/Edit/{(item?.BookId ?? 0)}";
+            var deleteurl = $"/Delete/{(item?.BookId ?? 0)}";
+
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Author</td>
+
+                <td style="display:inline-flex;gap:10px">
+                    <NavLink class="nav-link" href="@editurl">Edit</NavLink>
+                    <NavLink class="nav-link" href="@deleteurl">Delete</NavLink>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code
+{
+    List<Book> BookList = new List<Book>();
+
+    public int TotalCount { get; set; }
+
+    public string Search { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if(string.IsNullOrEmpty(Search))
+        {
+            BookList = BookService.GetAllBooks().ToList();
+        }
+        else
+        {
+            BookList = BookService.GetBookByName(Search);
+        }
+        TotalCount = BookList.Count();
+    }
+    protected void SearchBook()
+    {
+        if (string.IsNullOrEmpty(Search))
+        {
+            BookList = BookService.GetAllBooks().ToList();
+        }
+        else
+        {
+            BookList = BookService.GetBookByName(Search);
+        }
+        TotalCount = BookList.Count();
+    }
+
+}
