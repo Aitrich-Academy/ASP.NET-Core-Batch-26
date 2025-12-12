@@ -1,0 +1,18 @@
+﻿@page
+@model AddProfile.Pages.ProfileModel
+<h2>My Profile</h2>
+@if(Model.User!=null)
+{
+    <p>First Name:@Model.User.FirstName</p>
+    <p>Last Name:@Model.User.LastName</p>
+    <p>Email:@Model.User.Email</p>
+
+    <form method="post">
+        <button type="submit">Edit Profile</button>
+    </form>
+}
+else
+{
+    <p>No profile found...Please login</p>
+}
+

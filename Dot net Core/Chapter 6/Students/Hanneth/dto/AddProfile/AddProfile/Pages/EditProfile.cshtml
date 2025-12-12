@@ -1,0 +1,16 @@
+﻿@page
+@model AddProfile.Pages.EditProfileModel
+<h2>Edit Profile</h2>
+<form method="post">
+    <div>
+        <label>First Name</label>
+        <input asp-for="Input.FirstName" />
+    </div>
+    <div>
+        <label>Last Name</label>
+        <input asp-for="Input.LastName" />
+    </div>
+    <div>
+        <button type="submit">Save Changes</button>
+    </div>
+</form>
