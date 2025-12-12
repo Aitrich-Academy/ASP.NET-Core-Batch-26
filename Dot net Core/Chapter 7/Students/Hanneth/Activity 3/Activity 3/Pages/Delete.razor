@@ -1,0 +1,42 @@
+﻿@page "/Delete/{Id}"
+@inject IBookService bookService
+@inject NavigationManager navigationManager
+<h3>Delete book</h3>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <p class="text-danger">Are you sure you want to delete this?</p>
+        <div class="row">
+            <div class="col-md-8">
+                <form @onsubmit="DeleteBook">
+
+                    <label for="Id" class="control-label">Book Id : @bookList.Id</label>
+                    <label for="Title" class="control-label">Title : @bookList.Title</label>
+                    <label for="Author" class="control-label">Author : @bookList.Author</label>
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                    <br />
+                    <br />
+                    <a class="btn btn-primary" href="/Display">Show List</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    Book bookList = new Book();
+    protected override void OnInitialized()
+    {
+        bookList = bookService.GetBookById(Convert.ToInt32(Id));
+    }
+    protected void DeleteBook()
+    {
+        bookService.DeleteBook(bookList.Id);
+        navigationManager.NavigateTo("/");
+    }
+}
