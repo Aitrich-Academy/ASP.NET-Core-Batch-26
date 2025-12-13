@@ -1,0 +1,9 @@
+﻿@page
+@model ServiceRepo.Pages.LoginModel
+<h2>Login</h2>
+<form method="post">
+   <div><input asp-for="Email" placeholder="Email" /></div> 
+   <div><input asp-for="Password" placeholder="Password" type="password"/></div>
+   <div><button type="submit">Login</button></div>
+</form>
+<p>@Model.ErrorMessage</p>

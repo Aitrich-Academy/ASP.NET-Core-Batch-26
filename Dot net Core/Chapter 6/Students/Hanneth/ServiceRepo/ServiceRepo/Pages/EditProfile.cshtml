@@ -1,0 +1,16 @@
+﻿@page
+@model ServiceRepo.Pages.EditProfileModel
+<h2>Edit Profile</h2>
+<form method="post">
+<div>
+    <p>First Name : </p>
+    <input asp-for="Input.FirstName" />
+</div>
+<div>
+    <p>Last Name : </p>
+    <input asp-for="Input.LastName" />
+</div>
+<div>
+    <button type="submit">Save Changes</button>
+</div>
+</form>

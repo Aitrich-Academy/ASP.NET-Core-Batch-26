@@ -1,0 +1,41 @@
+﻿@page "/"
+@inject IBookService bookService
+
+<PageTitle>Index</PageTitle>
+
+<h1>Index</h1>
+<p>
+    <NavLink class="nav-link" href="/Create">Add Books</NavLink>
+</p>
+
+<table class="alert-success">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in BookList)
+        {
+            var editurl = $"/Edit/{(item?.Id ?? 0)}";
+            var deleteurl = $"/Delete/{(item?.Id ?? 0)}";
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Author</td>
+            <td style="display: inline-flex; gap: 20px;">
+                    <NavLink class="nav-link" href="@editurl">Edit</NavLink>
+                <NavLink class="nav-link" href="@deleteurl">Delete</NavLink>
+            </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@code
+{
+    List<Book> BookList = new List<Book>();
+    protected override void OnInitialized()
+    {
+        BookList = bookService.GetAllBooks().ToList();
+    }
+}

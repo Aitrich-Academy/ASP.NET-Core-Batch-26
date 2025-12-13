@@ -1,0 +1,10 @@
+﻿@page
+@model ServiceRepo.Pages.ProfileModel
+<h2>My Profile</h2>
+@if (Model.User != null)
+{
+<p>First Name : @Model.user.FirstName</p>
+<p>Last NAme : @Model.user.LastName</p>
+<p>Email : @Model.user.Email</p>
+<a asp-page="/EditProfile">Edit profile</a>
+}
