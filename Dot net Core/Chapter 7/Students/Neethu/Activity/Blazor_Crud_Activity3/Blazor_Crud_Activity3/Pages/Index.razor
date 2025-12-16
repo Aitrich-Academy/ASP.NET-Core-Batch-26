@@ -65,7 +65,7 @@
         }
         TotalCount = BookList.Count();
     }
-    protected void SearchBook()
+    protected async Task SearchBook()
     {
         if (string.IsNullOrEmpty(Search))
         {
