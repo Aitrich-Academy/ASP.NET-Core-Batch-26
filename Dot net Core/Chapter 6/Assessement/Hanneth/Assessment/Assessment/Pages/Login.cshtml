@@ -1,0 +1,18 @@
+﻿@page
+@model Assessment.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<h2>Login</h2>
+<form method="post">
+    <div>
+    <label>Email : </label>
+    <input asp-for="@Model.Email"  />
+    </div>
+    <div>
+        <label>Password : </label>
+        <input type="password" asp-for="@Model.Password"/>
+    </div>
+    <button type="submit" class="btn btn-lg">Login</button>
+</form>
+<p>@Model.errormessage</p>
