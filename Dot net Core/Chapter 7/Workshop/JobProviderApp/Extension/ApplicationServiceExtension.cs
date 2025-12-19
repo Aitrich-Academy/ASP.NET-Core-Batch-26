@@ -28,8 +28,7 @@ namespace JobProviderApp.Extension
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddScoped<IJobProviderRepository, JobProviderRepository>();
             services.AddScoped<IJobRepository, JobRepository>();
-            services.AddScoped<IJobservice, JobService>();
-
+            services.AddScoped<IJobservice,JobService>();
             services.AddScoped<IAuthService, AuthService>();
             return services;
         }
