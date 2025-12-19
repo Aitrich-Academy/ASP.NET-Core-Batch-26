@@ -1,0 +1,31 @@
+﻿@page "/Create"
+@model EmployeeManagement_Repo.Pages.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Add Employee</h2>
+<div>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Input.Name" class="control-label"></label>
+            <input asp-for="Input.Name" class="form-control" />
+            <span asp-validation-for="Input.Name"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Input.Designation" class="control-label"></label>
+            <input asp-for="Input.Designation" class="form-control" />
+            <span asp-validation-for="Input.Designation"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Input.Salary" class="control-label"></label>
+            <input asp-for="Input.Salary" class="form-control" />
+            <span asp-validation-for="Input.Salary"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
