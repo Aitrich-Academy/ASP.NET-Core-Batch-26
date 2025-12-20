@@ -1,0 +1,33 @@
+﻿@page "/Details"
+@model EmployeeManagement_Repo.Pages.DetailsModel
+@{
+   
+}
+<h3>Employee Details</h3>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model=>model.employee.Name);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model=>model.employee.Name);
+        </dd>
+
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.employee.Designation);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.employee.Designation);
+        </dd>
+
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.employee.Salary);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.employee.Salary);
+        </dd>
+    </dl>
+</div>
+
+<a asp-page="Index" class="btn btn-success">Back To List</a>

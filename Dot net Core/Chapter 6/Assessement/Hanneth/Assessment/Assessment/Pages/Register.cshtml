@@ -1,0 +1,29 @@
+﻿@page "/"
+@model Assessment.Pages.RegisterModel
+@{
+    ViewData["Title"] = "register";
+}
+<h5>Register</h5>
+<form method="post" class="form-control">
+    <div>
+    <label>FirstName : </label>
+    <input asp-for="Input.FirstName"/>
+    </div>
+    <div>
+        <label>Last Name :</label>
+        <input asp-for="Input.LastName"/>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input asp-for="Input.Email"/>
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password" asp-for="Input.Password" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-lg">Register</button>
+    </div>
+</form>
+
+    <p>@Model.message</p>
