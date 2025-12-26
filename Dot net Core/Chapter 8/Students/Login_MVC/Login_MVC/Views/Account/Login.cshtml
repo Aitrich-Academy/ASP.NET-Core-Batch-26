@@ -1,0 +1,16 @@
+﻿@model Login_MVC.Models.UserDto
+
+<h2>Login</h2>
+
+@* @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+ *@
+<form asp-action="Login" method="post">
+    <label>Email:</label>
+    <input asp-for="Email" />
+    <br />
+    <label>Password:</label>
+    <input asp-for="Password" type="password" />
+    <br />
+    <button type="submit">Login</button>
+</form>
+<p>@ViewBag.Error</p>
