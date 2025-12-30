@@ -1,0 +1,33 @@
+﻿@model JobPortal_CompanyRegistration.Dto_s.UserDto
+<input type="hidden" name="CompanyId" value="@ViewBag.CompanyId" />
+<div class="container-fluid bg-light py-4">
+    <div class="d-flex justify-content-center mb-3">
+        <a asp-action="MemberRegistration" asp-controller="Member" class="btn btn-light fw-bold me-2">Add Member</a>
+        <a asp-action="ListMember" asp-controller="Member" class="btn btn-light fw-bold ">List of Members</a>
+    </div>
+    <div class="bg-white p-4 rounded shadow w-75 mx-auto">
+        <h2 class="mb-4 fw-bold text-center">Remove a Member</h2>
+        <form asp-action="RemoveMember" asp-controller="Member">
+            <div class="mb-3">
+                <label asp-for="UserID" class="control-label"></label>
+                <input asp-for="UserID" class="form-control"  placeholder="Please Enter User ID"/>
+                <span asp-validation-for="UserID" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" placeholder="Please Enter First Name" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Designation" class="control-label"></label>
+                <input asp-for="Designation" class="form-control" placeholder="Please Enter Designation" />
+                <span asp-validation-for="Designation" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary w-50">Remove</button>
+        </form>
+    </div>
+</div>
+<div class="card shadow-lg">
+    @ViewBag.Message2
+    @ViewBag.error
+</div>

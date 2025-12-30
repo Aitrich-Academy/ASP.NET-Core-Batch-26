@@ -1,0 +1,62 @@
+﻿@model JobPortal_CompanyRegistration.Dto_s.UserDto
+<div class="container-fluid bg-light py-4">
+    <div class="d-flex justify-content-center mb-3">
+        <a asp-action="RemoveMember" asp-controller="Member" asp-route-CompanyId="@Model.CompanyId" class="btn btn-light fw-bold me-2">Remove Member</a>
+         <a asp-action="ListMember" asp-controller="Member" asp-route-CompanyId="@Model.CompanyId" class="btn btn-light fw-bold ">List of Members</a>
+    </div>
+    <div class="bg-white p-4 rounded shadow w-75 mx-auto">
+        <h2 class="mb-4 fw-bold text-center">Registration of a New Member</h2>
+        <form asp-action="MemberRegistration" asp-controller="Member">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">First Name</label>
+                <input asp-for="FirstName" class="form-control" placeholder="Enter First Name" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Last Name</label>
+                <input asp-for="LastName" class="form-control" placeholder="Enter Last Name" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" placeholder="Enter Email ID" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input asp-for="Phone" class="form-control" placeholder="Enter Phone Number" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Designation</label>
+                    <input asp-for="Designation" class="form-control" placeholder="Enter Designation" />
+                    <span asp-validation-for="Designation" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Company Id</label>
+                    <input asp-for="CompanyId" class="form-control" placeholder="Enter CompanyId" />
+                    <span asp-validation-for="CompanyId" class="text-danger"></span>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Password</label>
+                    <input asp-for="Password" class="form-control" placeholder="Enter Password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Confirm Password</label>
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+        </div>
+            <button type="submit" class="btn btn-primary w-25">Register</button>
+        </form>
+    </div>
+</div>
+<p>@ViewBag.Message</p>
