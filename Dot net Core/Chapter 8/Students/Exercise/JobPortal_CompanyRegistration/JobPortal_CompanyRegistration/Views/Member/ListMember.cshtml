@@ -1,0 +1,23 @@
+﻿@model List<JobPortal_CompanyRegistration.Dto_s.UserDto>
+
+<div class="d-flex justify-content-center mb-3">
+    <a asp-action="RemoveMember" asp-controller="Member" asp-route-CompanyId="@ViewBag.CompanyId" class="btn btn-light fw-bold me-2">Remove Member</a>
+    <a asp-action="MemberRegistration" asp-controller="Member" asp-route-CompanyId="@ViewBag.CompanyId" class="btn btn-light fw-bold me-2">Add Member</a>
+</div>
+<div class="container py-4">
+    <div class="row g-4">
+        @foreach (var member in Model)
+        {
+            <div class="col-md-6">
+                <div class="border rounded p-3 bg-light">
+                    <h5 class="fw-bold">@member.FirstName</h5>
+                    <p>User ID: @member.UserID</p>
+                    <p>Designation: @member.Designation</p>
+                    <p>Phone: @member.Phone</p>
+                    <p>Email: @member.Email</p>
+                    
+                </div>
+            </div>
+        }
+    </div>
+</div>

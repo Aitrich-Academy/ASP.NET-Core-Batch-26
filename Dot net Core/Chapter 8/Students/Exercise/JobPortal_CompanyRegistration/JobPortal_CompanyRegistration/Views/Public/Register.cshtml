@@ -1,0 +1,59 @@
+﻿@model JobPortal_CompanyRegistration.Dto_s.CompanyDto
+
+<div class="container-fluid vh-100">
+    <div class="row h-100">
+        <div class="col-md-6 p-0">
+            <img src="~/Images/Registration3.jpg" alt="CompanyRegistration Banner" class="img-fluid h-100 w-100 object-fit-cover" />
+        </div>
+        <div class="col-md-6 d-flex align-items-start justify-content-center">
+            <div >
+                <h2 class="mb-4 fw-bold">Company Registration</h2>
+                <form asp-action="Register" asp-controller="Public">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="mb-3">
+                       <label class="form-label">Company Name</label>
+                       <input asp-for="Name" class="form-control" placeholder="Enter Company Name" />
+                       <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input asp-for="Email" class="form-control" placeholder="Enter Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Website</label>
+                        <input asp-for="Website" class="form-control" placeholder="Enter Website" />
+                        <span asp-validation-for="Website" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input asp-for="Phone" class="form-control" placeholder="Enter Phone Number" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">About</label>
+                        <textarea asp-for="About" rows="2" class="form-control" placeholder="About"></textarea>
+                        <span asp-validation-for="About" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Vision</label>
+                        <textarea asp-for="Vision" rows="2" class="form-control" placeholder="Vision"></textarea>
+                        <span asp-validation-for="Vision" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mission</label>
+                        <textarea asp-for="Mission" rows="2" class="form-control" placeholder="Mission"></textarea>
+                        <span asp-validation-for="Mission" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                    <div class="text-center mt-3">
+                        <small>Already Have An Account?<a href="/Login">Sign In</a></small>
+                    </div>
+
+                </form>
+            </div>
+           
+        </div>
+    </div>
+    
+</div>
