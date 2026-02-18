@@ -1,0 +1,6 @@
+@Arithemetic_Calc_HostAddress = http://localhost:5178
+
+GET {{Arithemetic_Calc_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

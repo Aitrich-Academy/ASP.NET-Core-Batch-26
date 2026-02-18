@@ -14,7 +14,7 @@ namespace CalculatorApi.Tests
             var result = calc.Add(8, 8);
 
             // Assert
-            Assert.Equal(10, result);
+            Assert.Equal(16, result);
         }
 
 
