@@ -1,0 +1,46 @@
+.container{
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.search-container{
+  width: 70%;
+  height: 30px;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+  
+}
+.search-container input{
+   flex: 1;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   color: gray;
+
+}
+
+.search-icon2{
+    width: 25px;
+    height: 25px;
+    
+    background-image: url('src\assets\images\icon filter.png');
+    background-size: cover;
+}
+.container img{
+    float: right;
+    
+}
+
+#image1{
+    margin-top: 20px;
+}
+#image2{
+    margin-top: 20px;
+}

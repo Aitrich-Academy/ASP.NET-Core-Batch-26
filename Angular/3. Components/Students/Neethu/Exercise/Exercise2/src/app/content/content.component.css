@@ -1,0 +1,57 @@
+.Main-Section{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.filters{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    align-items: center;
+
+}
+.filters a{
+    text-decoration: none;
+    color: black;
+}
+.Sub-section{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+.Job-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+   
+}
+.icon1{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url('src\assets\images\Rectangle 14.png');
+}
+.Details{
+    display: flex;
+    width: 150px;
+    height: 25px;
+    gap: 15px;
+    
+
+}
+.btn1{
+    border: 1px solid #CAC3AA;
+    background-color: #CAC3AA;
+    border-radius: 15px;
+}
+.icon2{
+     width: 50px;
+    height: 50px;
+    display: inline-block;
+background-image: url('src\assets\images\Rectangle 14 (1).png');
+}

@@ -1,0 +1,109 @@
+.Search-Section{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px 150px;
+    width: 100%;
+    gap: 20px;
+}
+.search-container{
+  width: 70%;
+  height: 40px;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 8px;
+  
+}
+.search-container input{
+   flex: 1;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   color: gray;
+
+}
+.search-icon{
+    
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    background-image: url('src\assets\images\search copy 2.png');
+    background-size: cover;
+}
+.search-icon2{
+    width: 18px;
+    height: 18px;
+    
+    background-image: url('src\assets\images\icon filter.png');
+    background-size: cover;
+}
+.filters{
+    display: flex;
+    gap: 50px;
+    margin-left: 55px;
+
+}
+.btn1{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #117FBE;
+    background-color: #117FBE;
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.Details{
+    display: flex;
+    gap: 50px;
+    margin-left: 55PX;
+}
+.btn_detail{
+     width: 220px;
+    height: 55px;
+    border: 1px solid #117FBE;
+    background-color: #117FBE;
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    gap:15px;
+    
+}
+.Detail_Icon1{
+     width: 55px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 5px;
+    
+    background-image: url('src\assets\images\Group 33988.png');
+    background-size: cover;
+}
+.Detail_Icon2{
+     width: 55px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 5px;
+    
+    background-image: url('src\assets\images\icon.png');
+    background-size: cover;
+}
+.Detail_Icon3{
+     width: 55px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 5px;
+    
+    background-image: url('src\assets\images\icon (1).png');
+    background-size: cover;
+}
+.image img
+{
+    display: inline-block;
+    width: 70%;
+    margin-left: 20px;
+}
