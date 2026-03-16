@@ -1,0 +1,24 @@
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    margin: 0;
+    display: flex;
+}
+.col-3{
+    flex-basis: 22%;
+    height: 118.5vh;
+    background-color: #117FBE;
+}
+
+.col-9{
+    flex-basis: 78%;
+    height: 118.5vh;
+}
+.section2{
+    width: 100%;
+    background-color: #117FBE;
+    height: 500px;
+}

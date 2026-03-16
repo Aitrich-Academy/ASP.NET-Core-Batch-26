@@ -1,0 +1,48 @@
+<div class="container">
+    <h2 id="title"> Find Jobs</h2>
+    <header class="header">
+        <div class="search">
+            
+            <input type="text" placeholder="Search by Name,Member ID,Designation" (input)="filterjobs($event)">
+            <i class="icon"></i>
+        </div>
+        <div class="right-section">
+            <img src="assets\images\notification-bing.png">
+            <img src="assets\images\mi_log-out.png">
+        </div>
+        
+    </header>
+    <div class="filter-section">
+            <a (click)="showAlljobs()" >List Jobs</a>
+            <a (click)="showSavedjobs()" >Saved Jobs</a>
+    </div>
+    
+    <div class="Sub-section">
+        <div class="Job-section" *ngIf="showListjobs">
+            <p style="font-weight: bold; padding: 20px;">Showing {{filteredjobs.length}}  applicants</p>
+        <!-- <div *ngIf="showListjobs"> -->
+                <div class="jobs-section" *ngFor="let job of filteredjobs">
+                    <div style="display: flex; font-weight: bold;">
+                        <i class="icon1" [style.background-image]="'url(' + job.icon + ')'"></i>
+                        <p >{{job.jobtitle}}<br><a href="#" style="text-decoration: none;color: #6FACEE;">{{job.company}}</a>.{{job.location}}</p>
+                    </div>
+                    <p class="job-desc">{{job.content}}</p>
+                    <div class="Details">
+                        <button class="btn1">{{job.jobtype}}</button>
+                        <button class="btn1">{{job.salary}}</button>
+                        <button class="btn1">{{job.location}}</button>
+                        <button class="btn1">{{job.jobmode}}</button>
+                        <button class="btn1" (click)="saveJob(job)">Save</button> 
+                        <button class="btn1">Remove</button>
+                    </div>
+                </div>
+        <!-- </div> -->
+        </div>
+        <div *ngIf="!showListjobs">
+            <app-saved-jobs [savedjobs]="savedJobs"></app-saved-jobs>
+        </div>
+     
+        <img src="assets/images/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space 1.png" style="width: 400px;">
+   </div>
+   
+</div>
