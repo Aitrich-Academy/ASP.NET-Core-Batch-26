@@ -1,0 +1,42 @@
+.Job-section{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: #F8F9FB;
+    height: 600px;
+    
+}
+.jobs-section{
+    
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.job-desc{
+    font-size: large;
+}
+.icon1 {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+.Details{
+    display: flex;
+    width: 150px;
+    height: 25px;
+    gap: 15px;
+
+}
+.btn1{
+    border: 1px solid #CAC3AA;
+    background-color: #CAC3AA;
+    border-radius: 15px;
+    width: 180px;
+    height: 35px;
+  
+    
+}

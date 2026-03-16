@@ -1,0 +1,19 @@
+<div class="Job-section" >
+            <p style="font-weight: bold; padding: 20px;">Showing {{savedjobs.length}}  applicants</p>
+        <!-- <div *ngIf="showListjobs"> -->
+                <div class="jobs-section" *ngFor="let job of savedjobs">
+                    <div style="display: flex; font-weight: bold;">
+                        <i class="icon1" [style.background-image]="'url(' + job.icon + ')'"></i>
+                        <p >{{job.jobtitle}}<br><a href="#" style="text-decoration: none;color: #6FACEE;">{{job.company}}</a>.{{job.location}}</p>
+                    </div>
+                    <p class="job-desc">{{job.content}}</p>
+                    <div class="Details">
+                        <button class="btn1">{{job.jobtype}}</button>
+                        <button class="btn1">{{job.salary}}</button>
+                        <button class="btn1">{{job.location}}</button>
+                        <button class="btn1">{{job.jobmode}}</button>
+                        <button class="btn1">Remove</button>
+                    </div>
+                </div>
+        <!-- </div> -->
+</div>
