@@ -1,0 +1,121 @@
+#title{
+    font-weight: bold;
+    padding: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+   width: 70%;
+  height: 30px;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 8px;
+  margin: 20px;
+    
+    
+}
+.search input{
+   flex: 1;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   color: gray;
+    
+}
+.icon{
+    
+     width: 18px;
+    height: 18px;
+    
+    background-image: url('src\assets\images\icon filter.png');
+    background-size: cover;
+    margin-left: auto;
+}
+.right-section{
+    display: flex;
+    padding: 15px;
+}
+.right-section img{
+    width: 50px;
+    height: 50px;   
+}
+.filter-section{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 50px;
+    display: flex;
+    gap: 20px;
+    padding-left: 120px;
+    margin: 20px;
+    
+
+}
+.filter-section a{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    transition: transform 0.2s ease;
+
+
+}
+.filter-section a:hover {
+    transform: translateX(5px);
+    color: #6FACEE;
+}
+
+.Sub-section{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.Job-section{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: #F8F9FB;
+    height: 600px;
+    
+}
+.jobs-section{
+    
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.job-desc{
+    font-size: large;
+}
+.icon1 {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+.Details{
+    display: flex;
+    width: 150px;
+    height: 25px;
+    gap: 15px;
+
+}
+.btn1{
+    border: 1px solid #CAC3AA;
+    background-color: #CAC3AA;
+    border-radius: 15px;
+    width: 180px;
+    height: 35px;
+  
+    
+}
+.btn1:hover
+{
+    background-color: #918C7A;
+}
