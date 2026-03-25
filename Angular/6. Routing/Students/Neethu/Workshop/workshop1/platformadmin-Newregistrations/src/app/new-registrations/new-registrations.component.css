@@ -1,0 +1,164 @@
+/* header */
+.name{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    width: auto;
+}
+.search-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-section ul li{
+    list-style-type: none;
+}
+.search-section ul li a{
+    text-decoration: none;
+}
+.search{
+     width: 25%;
+  height: 30px;
+  background-color: #E7E7E7;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 1px solid #E7E7E7;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search input{
+   
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background-color: #E7E7E7;
+}
+.search i.icon{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-image: url('src\assets\images\Group.png');
+    background-size: cover;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-items li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+
+}
+.profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile h2{
+    margin: 0;
+    font-size: 16px;
+}
+.profile p{
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* content */
+
+.heading-info h5{
+    margin: 0%;
+    display: flex;
+    font-size: 14px;
+}
+.heading-info p{
+    margin: 0%;
+    font-size: 12px;
+    color: #888;
+}
+.middle-section{
+    display: flex;
+    
+    align-items: center;
+}
+.filters{
+    display: flex;
+    margin-left: 50px;
+    gap: 30px;
+   
+    
+}
+.btn1{
+    border-radius: 10px;
+     width: fit-content;
+    height: 30px;
+    font-size: 16px;
+    justify-content: center ;
+    background-color: #C7A9E1;
+    border: 1px solid #C7A9E1;
+
+   
+}
+.btn1:hover,
+.btn1.hovered{
+    background-color: #220838;
+    color: white;
+}
+.logo{
+    width: 20px;
+    height: 20px;
+}
+.table{
+    width: 90%;
+    padding: auto;
+    text-align: center;
+    
+}
+.btn2.pending{
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    justify-content: center ;
+    background-color: white;
+    border: 1px solid grey;
+    color: gray;
+    border-radius: 12px;
+
+}
+.btn2.onhold{
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    justify-content: center ;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    border-radius: 12px;
+
+}
+.btn2.candidate{
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    justify-content: center ;
+    background-color: #079B11;
+    border: 1px solid #079B11;
+    color: white;
+    border-radius: 12px;
+
+}
+.frame{
+margin-right: 20px;
+}
+.status{
+    display: flex;
+    gap: 15px;
+}

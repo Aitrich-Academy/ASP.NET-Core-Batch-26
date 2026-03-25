@@ -1,0 +1,83 @@
+<!-- header -->
+<div class="search-section">
+    <ul>
+        <li>
+            <a href="#">
+                <p class="name">New Registrations</p>
+            </a>
+        </li>
+    </ul>
+    <div class="search">
+        <input type="text" placeholder="Search Something here...">
+        <i class="icon"></i>
+    </div>
+    <div class="navbar-right">
+        <ul class="nav-items">
+            <li>
+                <a href="#"><img src="assets/images/notification.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/images/notification (1).png"></a>
+            </li>
+        </ul>
+        <div class="profile">
+            <img src="assets/images/profilePicture.png">
+            <div class="profile-info">
+                <h2>Oda Dink</h2>
+                <p>Super Admin</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- content -->
+
+<br><br>
+<div class="middle-section">
+    <div class="heading-info">
+         <h5>Showing 45 Applicants</h5>
+         <p>Based Your Preferences</p>
+    </div>
+    <div class="filters">
+        <button class="btn1" (click)="selectUsers($event)">All</button>
+        <button class="btn1" (click)="selectUsers($event)">Pending</button>
+        <button class="btn1" (click)="selectUsers($event)">On-Hold</button>
+        <button class="btn1" (click)="selectUsers($event)">Candidate</button>
+    </div>
+</div>
+<br>
+<div class="card-row">
+    
+        <table class="table">
+        <thead >
+            <th>ID</th>
+            <th>Date Applied</th>
+            <th>Company</th>
+            <th>Type</th>
+            <th>Position</th>
+            <th>Contact</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let user of filteredusers">
+                <tr style="padding: 10px; margin-bottom: 20px; text-align: center;">
+                    <td><input type="checkbox" (change)="toggleAll($event)"> {{user.Id}}</td>
+                    <td>{{user.AppliedDate}}</td>
+                    <td><img [src]="companylogo" class="logo">{{user.Company}}<br>{{user.Company2}}</td>
+                    <td>{{user.Type}}</td>
+                    <td>{{user.Position}}</td>
+                    <td><img [src]="contact"><img [src]="email"></td>
+                    
+                    <td class="status">
+                        <button *ngIf="user.Status=='Pending'" class="btn2 pending">{{user.Status}}<img></button>
+                        <button *ngIf="user.Status=='On-Hold'" class="btn2 onhold">{{user.Status}}</button>
+                        <button *ngIf="user.Status=='Candidate'" class="btn2 candidate">{{user.Status}}</button>
+                        <img [src]="frame2" class="frame">
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+        </table>
+    
+</div>
